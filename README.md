@@ -1,24 +1,7 @@
-# README
+# React on Rails with table and filtering demo using Docker Compose
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+How to get the app up and running on your development machine:
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Install Docker client
+* Run the app using `docker-compose up -d && docker-compose logs -f`
+* Navigate to [http://localhost/hello_world](http://localhost/hello_world)
