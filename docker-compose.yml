@@ -1,0 +1,19 @@
+version: '2'
+services:
+  rails:
+    container_name: ror-demo
+    build: .
+    environment:
+      - PASSENGER_APP_ENV=development
+    ports:
+      - "80:80"
+    volumes:
+      - .:/home/app/ror-demo
+  webpack:
+    container_name: ror-demo-webpack
+    build: .
+    ports:
+      - "3035:3035"
+    volumes:
+      - .:/home/app/ror-demo
+    command: sh -c 'rm -rf public/packs/* || true && bundle exec rake react_on_rails:locale && bin/webpack -w'
