@@ -6,10 +6,7 @@ class EventApplication extends React.Component {
   constructor(props) {
     super(props);
 
-    //props are loaded as an object so need to convert to Arry
-    var props_array = Object.keys(props).map(function (key) { return props[key]; });
-
-    this.state = { events: props_array }
+    this.state = { events: JSON.parse(props.events) }
   }
 
   render () {
