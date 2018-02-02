@@ -3,6 +3,15 @@ import React from 'react';
 import EventTable from './EventTable';
 
 class EventApplication extends React.Component {
+  constructor(props) {
+    super(props);
+
+    //props are loaded as an object so need to convert to Arry
+    var props_array = Object.keys(props).map(function (key) { return props[key]; });
+
+    this.state = { events: props_array }
+  }
+
   render () {
       return(
         <div className="container">
@@ -12,7 +21,7 @@ class EventApplication extends React.Component {
           </div>
           <div className="row">
             <div className="col-md-12">
-              <EventTable />
+              <EventTable events={this.state.events}/>
             </div>
           </div>
         </div>
