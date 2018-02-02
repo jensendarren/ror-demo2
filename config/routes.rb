@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  root 'dashboard#index'
+  root 'events#index'
 
-  resources :events
+  resources :events, only: [:index, :create] do
+    get :search, on: :collection
+  end
 end
