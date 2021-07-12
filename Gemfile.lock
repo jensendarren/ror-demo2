@@ -38,8 +38,8 @@ GEM
       i18n (~> 0.7)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
-    addressable (2.5.2)
-      public_suffix (>= 2.0.2, < 4.0)
+    addressable (2.8.0)
+      public_suffix (>= 2.0.2, < 5.0)
     arel (8.0.0)
     bindex (0.5.0)
     builder (3.2.3)
@@ -73,7 +73,7 @@ GEM
     jbuilder (2.7.0)
       activesupport (>= 4.2.0)
       multi_json (>= 1.2)
-    libv8 (6.3.292.48.1-x86_64-linux)
+    libv8 (6.3.292.48.1)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -93,10 +93,9 @@ GEM
     nio4r (2.2.0)
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
-    public_suffix (3.0.1)
+    public_suffix (4.0.6)
     puma (3.11.2)
     rack (2.0.4)
-    rack-cors (1.0.2)
     rack-proxy (0.6.3)
       rack
     rack-test (0.8.2)
@@ -201,7 +200,6 @@ DEPENDENCIES
   listen (>= 3.0.5, < 3.2)
   mini_racer
   puma (~> 3.7)
-  rack-cors
   rails (~> 5.1.4)
   react_on_rails
   sass-rails (~> 5.0)
